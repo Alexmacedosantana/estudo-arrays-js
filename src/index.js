@@ -39,3 +39,50 @@ tarefas[1] = "Treinar JavaScript";
 // Mostra o array final e o tamanho
 console.log(tarefas);     // ["estudar", "Treinar JavaScript"]
 console.log(tarefas.length); // 2
+
+
+// Crie um array de tarefas, adicione uma nova tarefa usando push(), percorra o array para mostrar cada tarefa, altere a segunda tarefa e remova a última tarefa usando pop(). Por fim, mostre o array atualizado e seu tamanho.
+let tarefas2 = ["Estudar", "Exercitar", "Ler"];
+
+// Adicionar uma tarefa
+tarefas2.push("Meditar");
+
+// Percorrer o array e mostrar cada tarefa
+for (let i = 0; i < tarefas2.length; i++) {
+    console.log(tarefas2[i]);
+}
+
+// Alterar a segunda tarefa (índice 1)
+tarefas2[1] = "Revisar";
+
+// Remover a última tarefa
+tarefas2.pop();
+
+// Mostrar o array final
+console.log("Tarefas atualizadas:", tarefas2);
+
+
+let nomes3 = ["Miguel", "Luan", 'Janaia'];
+
+nomes3.push("Junio", "Amanda");
+
+for (let i = 0; i < nomes3.length; i++) {
+    console.log(nomes3[i]);
+}
+nomes3[2] = "Jesica";
+
+nomes3.pop();
+console.log("nomes atualizados" ,nomes3);
+
+
+// Crie um array de produtos, adicione dois novos produtos usando push(), percorra o array para mostrar cada produto, altere o terceiro produto e remova o último produto usando pop(). Por fim, mostre o array atualizado e seu tamanho.
+let produtos2 = ["Arroz", "feijão", "macarrão"];
+
+produtos2.push("farinha", "açucar");
+
+for(let i = 0; i < produtos2.length; i++){
+    console.log(produtos2[i]);
+}
+    produtos2[2] = "Sal";
+produtos2.pop();
+console.log("lista Atualizada" ,produtos2);
