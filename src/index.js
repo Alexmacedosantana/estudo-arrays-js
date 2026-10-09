@@ -5,7 +5,7 @@ console.log(numeros [0]);// Imprime el primer elemento del array, que es 1
 let numeros1 = [10, 20, 30, 40, 50];
 
 for (let i = 0; i < numeros1.length; i++){
-    console.log(numeros1[i]);
+    console.log(numeros1[i]);// Imprime cada elemento do array
 }
 
 //adicionando elementos a um array usando push
@@ -75,7 +75,9 @@ nomes3.pop();
 console.log("nomes atualizados" ,nomes3);
 
 
-// Crie um array de produtos, adicione dois novos produtos usando push(), percorra o array para mostrar cada produto, altere o terceiro produto e remova o último produto usando pop(). Por fim, mostre o array atualizado e seu tamanho.
+// Crie um array de produtos, adicione dois novos produtos usando push(), 
+// percorra o array para mostrar cada produto, altere o terceiro produto e remova o último produto usando pop(). 
+// Por fim, mostre o array atualizado e seu tamanho.
 let produtos2 = ["Arroz", "feijão", "macarrão"];
 
 produtos2.push("farinha", "açucar");
@@ -86,3 +88,39 @@ for(let i = 0; i < produtos2.length; i++){
     produtos2[2] = "Sal";
 produtos2.pop();
 console.log("lista Atualizada" ,produtos2);
+
+
+// Crie um array de tarefas, adicione duas novas tarefas usando push(), percorra
+//  o array para mostrar cada tarefa, altere a segunda tarefa e remova a última tarefa usando pop().
+//  Por fim, mostre o array atualizado e seu tamanho.
+let tarefas4 = ["trabalhar", "comer", "estudar"];
+
+tarefas4.push("exercicio", "praticar");
+
+for (let i = 0; i < tarefas4.length; i++) {
+    if (tarefas4[i] === "praticar") {
+        console.log("Encontrei a tarefa:", tarefas4[i]);
+    }
+}
+tarefas4[1] = "livro";
+
+tarefas4.pop();
+
+console.log("Tarefas4 concluídas", tarefas4);
+
+// Crie um array de compras, adicione dois novos itens usando push(),
+//  percorra o array para mostrar cada item, 
+// altere o terceiro item e remova o último item usando pop(). 
+// Por fim, mostre o array atualizado e seu tamanho.
+let compras = ["Arroz", "Feijão","Macarrão"];
+
+compras.push("carne", "Suco");
+for (let i = 0; i < compras.length; i++){
+if (compras[i] === "Feijão"){
+   console.log("Feijão encomtrado na lista");
+}
+}
+compras[2] = "café"
+compras.pop();
+console.log(compras);
+console.log(`A lista possui ${compras.length} itens`);
