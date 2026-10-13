@@ -124,3 +124,24 @@ compras[2] = "café"
 compras.pop();
 console.log(compras);
 console.log(`A lista possui ${compras.length} itens`);
+
+
+// Crie um array de estoque, adicione dois novos produtos usando push(),
+//  percorra o array para mostrar cada produto, altere o terceiro produto e remova o último produto usando pop().
+//  Por fim, mostre o array atualizado e seu tamanho.
+let estoque = ["Teclado", "Mouse", "Monitor"];
+
+estoque.push("Notebook", "Webcam");
+
+for (let i = 0; i < estoque.length; i++) {
+    if (estoque[i] === "Mouse") {
+        console.log("Produto encontrado no estoque!");
+    }
+}
+
+estoque[2] = "Impressora";
+
+estoque.pop();
+
+console.log(estoque);
+console.log(`A quantidade de produtos é ${estoque.length}`);
