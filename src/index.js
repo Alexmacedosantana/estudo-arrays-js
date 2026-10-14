@@ -145,3 +145,24 @@ estoque.pop();
 
 console.log(estoque);
 console.log(`A quantidade de produtos é ${estoque.length}`);
+
+
+// Crie um array de roupas, adicione dois novos itens usando push(), 
+// percorra o array para mostrar cada item, altere o terceiro item e remova o último item usando pop(). 
+// Por fim, mostre o array atualizado e seu tamanho.
+let lojaDERoupa = ["calça jeans", "vestido", "blusa"];
+
+lojaDERoupa.push("bermuda", "camiseta", "sapato");
+
+for(let i = 0; i <lojaDERoupa.length; i++){
+    if(lojaDERoupa[i] === "bermuda"){
+        console.log("roupa na loja");
+        
+    }
+}
+lojaDERoupa[3] = "calça social";
+
+lojaDERoupa.pop();
+
+console.log(lojaDERoupa);
+console.log(`A loja tem novidade: ${lojaDERoupa.length}`);
