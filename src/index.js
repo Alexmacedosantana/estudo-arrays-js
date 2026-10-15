@@ -166,3 +166,20 @@ lojaDERoupa.pop();
 
 console.log(lojaDERoupa);
 console.log(`A loja tem novidade: ${lojaDERoupa.length}`);
+
+
+// Crie um array de materiais, adicione dois novos itens usando push(),
+//  percorra o array para mostrar cada item, altere o terceiro item e remova o último item usando pop().
+//  Por fim, mostre o array atualizado e seu tamanho.
+let materiais = ["Biblia", "Cadeira", "Microfone"];
+
+materiais.push("Mesa", "Caixa de som");
+for (let i = 0; i <materiais.length; i++){
+    if(materiais[i] === "Microfone"){
+        console.log("Material encontrado!");
+    }
+}
+materiais[1] = "Projetor"
+materiais.pop();
+console.log(materiais);
+console.log(`Na igreja tem ${materiais.length} matriais`);
